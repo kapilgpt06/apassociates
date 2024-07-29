@@ -31,7 +31,8 @@
   --heading-color: #545454;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #e96b56;
+  /* --accent-color: #e96b56; */
+  --accent-color: rgb(243, 170, 60);
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
@@ -43,7 +44,8 @@
   --nav-color: #444444;
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
-  --nav-hover-color: #e96b56;
+  /* --nav-hover-color: #e96b56; */
+  --nav-hover-color: rgb(243, 170, 60);
 
   /* Nav Dropdown Background Color - This color is used as the background for dropdown boxes that appear when hovering over primary navigation items. */
   --nav-dropdown-background-color: #ffffff;
@@ -52,7 +54,8 @@
   --nav-dropdown-color: #444444;
 
   /* Nav Dropdown Hover Color - Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-  --nav-dropdown-hover-color: #e96b56;
+  /* --nav-dropdown-hover-color: #e96b56; */
+  --nav-dropdown-hover-color: rgb(243, 170, 60);
 }
 
 /* Smooth scroll */
@@ -189,7 +192,14 @@ h6 {
     list-style: none;
     align-items: center;
   }
-
+  .navmenu span {
+    /* position: absolute; */
+    /* left: 10%;\ */
+    display: flex;
+    background-color: #059652;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   .navmenu li {
     position: relative;
   }
@@ -281,6 +291,10 @@ h6 {
     top: 0;
     left: -100%;
     visibility: visible;
+  }
+  .sitename {
+    position: absolute;
+    left: 45%;
   }
 }
 
@@ -1367,14 +1381,14 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.Portfolio .Portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.Portfolio .Portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -1386,57 +1400,59 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.Portfolio .Portfolio-filters li:hover,
+.Portfolio .Portfolio-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.Portfolio .Portfolio-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.Portfolio .Portfolio-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .Portfolio .Portfolio-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.Portfolio .Portfolio-content {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.Portfolio .Portfolio-content img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+.Portfolio .Portfolio-content .Portfolio-info {
+  /* opacity: 0; */
   position: absolute;
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.Portfolio .Portfolio-content .Portfolio-info h4 {
+  display: none;
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.Portfolio .Portfolio-content .Portfolio-info p {
+  line-height: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   text-align: center;
   display: inline-block;
   left: 0;
@@ -1444,10 +1460,12 @@ section,
   font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+  background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.Portfolio .Portfolio-content .Portfolio-info .preview-link,
+.Portfolio .Portfolio-content .Portfolio-info .details-link {
+  display: none;
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -1457,39 +1475,40 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.Portfolio .Portfolio-content .Portfolio-info .preview-link:hover,
+.Portfolio .Portfolio-content .Portfolio-info .details-link:hover {
+  display: none;
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
+.Portfolio .Portfolio-content .Portfolio-info .details-link {
   left: 50%;
   font-size: 34px;
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info {
+.Portfolio .Portfolio-content:hover .Portfolio-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
+.Portfolio .Portfolio-content:hover img {
   transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.Portfolio-details .Portfolio-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.Portfolio-details .Portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.Portfolio-details
+  .Portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet {
   width: 12px;
@@ -1498,20 +1517,20 @@ section,
   opacity: 1;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.Portfolio-details
+  .Portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.Portfolio-details .Portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px
     color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.portfolio-details .portfolio-info h3 {
+.Portfolio-details .Portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1520,27 +1539,27 @@ section,
     color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.Portfolio-details .Portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.Portfolio-details .Portfolio-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.Portfolio-details .Portfolio-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.Portfolio-details .Portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.Portfolio-details .Portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
