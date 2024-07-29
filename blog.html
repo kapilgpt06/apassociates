@@ -55,17 +55,23 @@
         >
           <div class="contact-info d-flex align-items-center">
             <i class="bi bi-envelope d-flex align-items-center"
-              ><a href="mailto:contact@example.com">contact@example.com</a></i
+              ><a href="mailto:amritdagar10@gmail.com"
+                >amritdagar10@gmail.com</a
+              ></i
             >
             <i class="bi bi-phone d-flex align-items-center ms-4"
-              ><span>+1 5589 55488 55</span></i
+              ><span>9711493715</span></i
             >
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+            <a
+              href="https://www.linkedin.com/in/amrit-dagar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="linkedin"
+              ><i class="bi bi-linkedin"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -75,38 +81,52 @@
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <!-- <li><a href="index.html" class="active">Home</a></li> -->
+              <li><a href="about.html">AboutUs</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </nav>
+
           <a href="index.html" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">APA<br /></h1>
+
+            <img src="assets/img/finalLogo.png" height="100px" width="50px" />
           </a>
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="index.html" class="">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="team.html">Team</a></li>
+              <li><a href="Portfolio.html">Industries</a></li>
               <!-- <li><a href="pricing.html">Pricing</a></li> -->
-              <li><a href="blog.html" class="active">Blog</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li> -->
+              <li><a href="blog.html">Blog</a></li>
+              <!-- <li class="dropdown">
+                <a href="#"
+                  ><span>Dropdown</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown">
+                    <a href="#"
+                      ><span>Deep Dropdown</span>
+                      <i class="bi bi-chevron-down toggle-dropdown"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li> -->
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -513,40 +533,76 @@
     </main>
 
     <footer id="footer" class="footer position-relative">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">APA</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+      <!-- <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Subscribe to our newsletter and receive the latest news about
+                our products and services!
               </p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <form
+                action="forms/newsletter.php"
+                method="post"
+                class="php-email-form"
+              >
+                <div class="newsletter-form">
+                  <input type="email" name="email" /><input
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your subscription request has been sent. Thank you!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container footer-top">
+        <div class="gy-4 justify-content-between row">
+          <div class="col-lg-3 col-md-6 footer-about">
+            <!-- <a href="index.html" class="d-flex align-items-center">
+              <span class="sitename">APA</span>
+            </a> -->
+            <div class="footer-contact pt-3">
+              <p>Shop no 66,67 Basement</p>
+              <p>sector 10, faridabad, Haryana</p>
+              <p class="mt-3">
+                <strong>Phone:</strong> <span>9711493715</span>
+              </p>
+              <p><strong>Email:</strong> <span>amritdagar10@gmail.com</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                <i class="bi bi-chevron-right"></i>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Terms of service</a>
+                <a href="about.html">About us</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="team.html">Team</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li>
@@ -564,14 +620,11 @@
                 <i class="bi bi-chevron-right"></i> <a href="#">Marketing</a>
               </li>
             </ul>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-3 col-md-12">
             <h4>Follow Us</h4>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra videa magna
-              derita valies
-            </p>
+            <p></p>
             <div class="social-links d-flex">
               <a href=""><i class="bi bi-twitter"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -581,6 +634,18 @@
           </div>
         </div>
       </div>
+
+      <!-- <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Eterna</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+        
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div> -->
     </footer>
 
     <!-- Scroll Top -->
